@@ -7,3 +7,20 @@ margin-left: 60px;
 align-items: center;
 }
 
+.header-text
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+}
+
+.header-text span:nth-child(1)
+{
+    color: #008cff;
+    font-weight: bolder;
+}
+.header-text span:nth-child(2)
+{
+    color: black;
+    font-weight: bold;
+}
