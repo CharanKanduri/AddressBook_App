@@ -1,0 +1,9 @@
+.head-content
+{
+margin-top: 20px;
+display: flex;
+background-color: rgb(252, 252, 252);
+margin-left: 60px;
+align-items: center;
+}
+
