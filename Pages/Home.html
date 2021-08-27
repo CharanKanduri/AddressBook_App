@@ -6,6 +6,7 @@
     <title>Home Page</title>
     <link rel="icon" href="../Assets/Logo/Logo.PNG">
     <link rel="stylesheet" href="../StyleSheets/HomeStyle.css">
+    <link rel="stylesheet" href="../StyleSheets/Formstyle.css">
 
 </head>
 
@@ -17,6 +18,68 @@
                 <span>BOOK</span>
             </div>
         </div>
+        <!--UC-2: Creating Form-->
+        <div class="form-container">
+                <form>
+                    <div class="form-heading">Address Book Form
+                        <span class="cancle-image"><img src="../Assets/Button/cancleIcon.png" alt="cancle" width="35px"></span>
+                    </div>
+
+                    <div class="form-attributes">
+                        <label class="label text" for="name" >Name :</label>
+                        <input class="input" type="text" id="name" name="name"  required> 
+                        <validate class="text-error" for="name"></validate>
+                    </div>
+
+                    <div class="form-attributes">
+                        <label for="phone" class="label text">Phone Number</label>
+                        <input type="text" id="phone" class="input"  required>
+                        <validate class="text-error" for="phone"></validate>
+                    </div>
+
+                    <div class="form-attributes">
+                        <label for="Address" class="label text">Address</label>
+                        <textarea type="text" id="Address" class="input address"></textarea>
+                        <validate class="text-error" for="Address"></validate>
+                    </div>
+
+                    <div class="form-attributes">
+                        <div class="city-state-zip">
+                                <div> 
+                                    <label for="city" class="label text">City</label>
+                                    <select id="countrySelect" size="1" onchange="makeSubmenu(this.value)">
+                                        <option value="" disabled selected>Choose State</option>
+                                        <option>Odisha</option>
+                                        <option>Maharashtra</option>
+                                        <option>AndhraPradesh</option>
+                                        <option>TamilNadu</option>
+                                     </select>
+                                </div>
+                                <!--State-->
+                                <div>
+                                    <label for="State" class="label text">State</label>
+                                    <select id="citySelect" size="" >
+                                        <option value="" disabled selected>Choose City</option>
+                                        <option></option>
+                                    </select>
+                                 </div>
+                                <!--ZipCode-->
+                           <div> 
+                            <label for="Address" class="label text">Zip Code</label>
+                            <input type="text" id="zip" class="zipcode" placeholder=" Zip Code">
+                           </div>
+                        </div>
+                    </div>
+                    <div class="submit-reset buttonparent">
+                        <button type="submit" class="button submitButton" >Add</button>
+                        <button type="reset" class="button" onclick="resetSelection()">Reset</button>
+                    </div>
+                </form>
+        </div>
+
+        <!--JavaScript for City by state-->
+        <script src="../JavaScript/CityByState.js"></script>
+        
 </body>
 
 </html>
