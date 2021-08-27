@@ -1,0 +1,69 @@
+.logo-content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    margin-left: 5%;
+    padding: 15px;
+}
+
+.header-text
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+.header-text span:nth-child(2)
+{
+    color: #42515F;
+}
+.header-text span:nth-child(1)
+{
+    color: #008CFF;
+}
+body
+{
+    margin: 0;
+}
+
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding: 30px 0 10px;
+    box-sizing: border-box;
+}
+.inner-header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+.emp-detail-text{
+    font-style: normal;
+    font-variant: normal;
+    font-family: Roboto;
+    font-weight: bolder;
+    font-size: 28px;
+    line-height: 25px;
+    color: #42515F;
+    margin-left: 10px;
+}
+
+.add-button{
+    font: normal normal normal 22px/29px Roboto;
+    background: #008CFF;
+    border:none;
+    border-radius: 5px;
+    padding:5px 18px;
+    outline: none;
+    text-decoration: none;
+    margin-right: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
