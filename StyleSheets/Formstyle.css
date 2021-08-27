@@ -85,7 +85,7 @@ color: red;
     height:30px;
     font-size:14pt;
 }
-#phone
+#PhoneNumber
 {
     height:30px;
     font-size:14pt;
@@ -107,7 +107,7 @@ color: red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 
 }
 select
